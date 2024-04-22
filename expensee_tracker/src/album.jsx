@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import Imagee from "./components/image";
 function Album() {
   const [album, setalbum] = useState([]);
 
@@ -20,9 +20,10 @@ function Album() {
 <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between" }}>
       {album.map((item) => (
         <div style={{ width: "30%", marginBottom: "20px" }}>
-        <p>{item.title}</p>
+        {/* <p>{item.title}</p> */}
         <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-        <img src={item.thumbnailUrl}  style={{ width: "100px", height: "100px", marginLeft: "10px" }}  />
+        {/* <img src={item.thumbnailUrl}  style={{ width: "100px", height: "100px", marginLeft: "10px" }}  /> */}
+        <Imagee path={item.thumbnail}/>
         </div>
         </div>
 

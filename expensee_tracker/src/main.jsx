@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-// import App from './App.jsx'
+import App from './App.jsx'
 import './index.css'
-import Album from './album.jsx'
+// import Album from './album.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <App /> */}
-    <Album/>
+    <App />
+    {/* <Album/> */}
   </React.StrictMode>,
 )
